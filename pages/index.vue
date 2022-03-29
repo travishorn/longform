@@ -23,7 +23,7 @@
 export default {
   name: "IndexPage",
   async asyncData({ $content }) {
-    const chapters = await $content("chapters").sortBy("title").fetch();
+    const chapters = await $content("chapters").sortBy("path").fetch();
     return { chapters };
   },
 }
