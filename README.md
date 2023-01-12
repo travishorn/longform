@@ -40,13 +40,13 @@ Copy generated files located at `./dist` to your static host provider.
 
 ### With a server
 
-Build for production
+Generate static files for production
 
 ```bash
-npm run build
+npm run generate
 ```
 
-Launch server
+Launch server for generated static files
 
 ```bash
 npm run start
@@ -56,7 +56,7 @@ npm run start
 
 The MIT License
 
-Copyright 2022 Travis Horn
+Copyright 2023 Travis Horn
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

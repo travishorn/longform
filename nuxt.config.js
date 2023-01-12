@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "description", name: "description", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie nisl ac vestibulum posuere. Etiam pulvinar turpis ac lectus placerat." },
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [
