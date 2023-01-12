@@ -1,5 +1,6 @@
 ---
 title: Chapter 1
+order: 1
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad aut

@@ -8,19 +8,19 @@ A scaffold for a long page of text with chapters. Includes table of contents.
 
 Install dependencies
 
-```bash
+```sh
 npm install
 ```
 
 Serve with hot reload at http://localhost:3000
 
-```bash
+```sh
 npm run dev
 ```
 
 ## Writing
 
-Create chapters as individual markdown (.md) files in `./pages`. Make sure to
+Create chapters as individual markdown (.md) files in `./content`. Make sure to
 give each a title in the frontmatter.
 
 ```markdown
@@ -31,35 +31,27 @@ title: My First Chapter
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad aut...
 ```
 
-Chapters are sorted alphabetically by filename and displayed one after another
-on one continuous page. To make sure chapters are in order, consider a naming
-pattern such as `00-my-first-chapter.md` and `01-my-second-chapter.md`, etc.
+If you give chapters order properties in the frontmatter, they will be sorted
+accordingly. Otherwise, they will be sorted by filename.
+
+```markdown
+---
+title: My First Chapter
+order: 1
+---
+```
+
+Chapters are displayed one after another on one continuous page.
 
 ## Deployment
 
-### As a static site
+Generate static output files
 
-Generate static project
-
-```bash
+```sh
 npm run generate
 ```
 
-Copy generated files located at `./dist` to your static host provider.
-
-### With a server
-
-Generate static files for production
-
-```bash
-npm run generate
-```
-
-Launch server for generated static files
-
-```bash
-npm run start
-```
+Copy generated files located at `./.output/` to your static host provider.
 
 ## License
 

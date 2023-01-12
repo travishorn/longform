@@ -1,5 +1,6 @@
 ---
 title: Chapter 3
+order: 3
 ---
 
 Ut velit ligula, vestibulum vitae scelerisque sed, egestas eget mauris.

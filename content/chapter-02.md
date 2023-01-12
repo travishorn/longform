@@ -1,5 +1,6 @@
 ---
 title: Chapter 2
+order: 2
 ---
 
 Duis eu tincidunt ex. Sed condimentum nisi in venenatis sodales. Nulla tempor
