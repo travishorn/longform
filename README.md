@@ -23,8 +23,17 @@ npm run dev
 Create chapters as individual markdown (.md) files in `./pages`. Make sure to
 give each a title in the frontmatter.
 
-Chapters are sorted alphabetically by title and displayed one after another on
-the site.
+```markdown
+---
+title: My First Chapter
+---
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad aut...
+```
+
+Chapters are sorted alphabetically by filename and displayed one after another
+on one continuous page. To make sure chapters are in order, consider a naming
+pattern such as `00-my-first-chapter.md` and `01-my-second-chapter.md`, etc.
 
 ## Deployment
 
