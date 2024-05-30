@@ -1,18 +1,34 @@
 # Longform
 
-A scaffold for a long page of text with chapters. Includes table of contents.
+A scaffold for a long page of text with sections.
 
-![Desktop screenshot](./screenshot-desktop.png)
+- Table of contents
+- Scrollspy-type navigation highlighting
+- Responsive with drawer for small screens
+
+![Screenshot](./screenshot.png)
 
 ## Development
 
-Install dependencies
+Clone this repository:
+
+```sh
+git clone https://github.com/travishorn/longform
+```
+
+Change into the directory:
+
+```sh
+cd longform
+```
+
+Install the dependencies:
 
 ```sh
 npm install
 ```
 
-Serve with hot reload at http://localhost:3000
+Run the development server:
 
 ```sh
 npm run dev
@@ -20,44 +36,44 @@ npm run dev
 
 ## Writing
 
-Create chapters as individual markdown (.md) files in `./content`. Make sure to
-give each a title in the frontmatter.
+Create sections as individual markdown (.md) files in ./src/content. Make sure
+to give each an `id`, `title`, and `order` in the frontmatter.
 
 ```markdown
 ---
-title: My First Chapter
+id: introduction
+title: Introduction
+order: 0
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad aut...
+## Introduction
+
+In the rapidly evolving world of frontend development, the tools and frameworks
+available can significantly influence the efficiency and effectiveness of a
+developer's workflow. Among the many options, Vite has emerged as a standout
+tool for building modern web applications. Developed by Evan You, the creator of
+Vue.js, Vite is designed to address many of the limitations and pain points
+associated with traditional build tools like Webpack. This essay explores the
+key benefits of using Vite for frontend tooling, including its blazing-fast
+development server, optimized build process, seamless integration with modern
+frameworks, and rich plugin ecosystem.
 ```
-
-If you give chapters order properties in the frontmatter, they will be sorted
-accordingly. Otherwise, they will be sorted by filename.
-
-```markdown
----
-title: My First Chapter
-order: 1
----
-```
-
-Chapters are displayed one after another on one continuous page.
 
 ## Deployment
 
-Generate static output files
+Build the project:
 
 ```sh
-npm run generate
+npm run build
 ```
 
-Copy generated files located at `./.output/` to your static host provider.
+Copy the built files located at `./dist` to your static host provider.
 
 ## License
 
 The MIT License
 
-Copyright 2023 Travis Horn
+Copyright 2024 Travis Horn
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
