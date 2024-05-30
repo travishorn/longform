@@ -1,10 +1,6 @@
 ---
-id: introduction
 title: Introduction
-order: 0
 ---
-
-## Introduction
 
 In the rapidly evolving world of frontend development, the tools and frameworks
 available can significantly influence the efficiency and effectiveness of a

@@ -1,10 +1,6 @@
 ---
-id: conclusion
 title: Conclusion
-order: 5
 ---
-
-## Conclusion
 
 Vite represents a significant advancement in frontend tooling, offering numerous
 benefits that streamline the development process and improve performance. Its

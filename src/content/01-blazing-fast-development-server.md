@@ -1,10 +1,6 @@
 ---
-id: blazing-fast-development-server
 title: Blazing-Fast Development Server
-order: 1
 ---
-
-## Blazing-Fast Development Server
 
 One of the most compelling advantages of Vite is its incredibly fast development
 server. Unlike traditional build tools that bundle the entire application before

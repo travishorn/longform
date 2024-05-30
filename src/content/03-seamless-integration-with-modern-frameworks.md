@@ -1,10 +1,6 @@
 ---
-id: seamless-integration-with-modern-frameworks
 title: Seamless Integration with Modern Frameworks
-order: 3
 ---
-
-## Seamless Integration with Modern Frameworks
 
 Vite is designed with modern JavaScript frameworks in mind, offering seamless
 integration with popular tools like Vue.js, React, and Svelte. This

@@ -37,16 +37,12 @@ npm run dev
 ## Writing
 
 Create sections as individual markdown (.md) files in ./src/content. Make sure
-to give each an `id`, `title`, and `order` in the frontmatter.
+to give each a `title` in the frontmatter.
 
 ```markdown
 ---
-id: introduction
 title: Introduction
-order: 0
 ---
-
-## Introduction
 
 In the rapidly evolving world of frontend development, the tools and frameworks
 available can significantly influence the efficiency and effectiveness of a
@@ -57,6 +53,16 @@ associated with traditional build tools like Webpack. This essay explores the
 key benefits of using Vite for frontend tooling, including its blazing-fast
 development server, optimized build process, seamless integration with modern
 frameworks, and rich plugin ecosystem.
+```
+
+Markdown files will be displayed on the page in order of their filename. You can
+also set a custom order by adding `order` properties in the frontmatter.
+
+```markdown
+---
+title: Introduction
+order: 0
+---
 ```
 
 ## Deployment

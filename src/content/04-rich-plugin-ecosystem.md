@@ -1,10 +1,6 @@
 ---
-id: rich-plugin-ecosystem
 title: Rich Plugin Ecosystem
-order: 4
 ---
-
-## Rich Plugin Ecosystem
 
 Vite boasts a rich plugin ecosystem that enhances its functionality and makes it
 highly adaptable to various development needs. The plugin API is inspired by

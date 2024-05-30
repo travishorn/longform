@@ -7,10 +7,11 @@ for (const path in files) {
   const module = await files[path]()
   sections.push({
     component: module.default,
+    id: path.slice(path.lastIndexOf('/') + 1, -3),
     ...module.frontmatter
   })
 }
-sections = sections.sort((a, b) => a.order - b.order)
+sections = sections.sort((a, b) => a.id < b.id).sort((a, b) => a.order - b.order)
 
 const activeSection = ref('')
 const drawerOpen = ref(false)
@@ -26,8 +27,8 @@ function closeDrawer() {
 const observeSections = () => {
   const observer = new IntersectionObserver(handleIntersection, {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.5
+    rootMargin: '-30px',
+    threshold: 0.8
   })
 
   sections.forEach((item) => {
@@ -54,7 +55,7 @@ onMounted(() => {
 <template>
   <button
     @click="toggleDrawer"
-    class="block lg:hidden fixed top-2 left-2 z-40 border border-zinc-400 px-2 pt-2 pb-1 text-lg bg-white rounded hover:bg-zinc-100"
+    class="block lg:hidden fixed top-2 left-2 z-40 border border-zinc-400 px-3 pt-2 pb-1 text-lg bg-white rounded hover:bg-zinc-100"
   >
     ☰
   </button>
@@ -76,8 +77,13 @@ onMounted(() => {
     </ul>
   </nav>
 
-  <main class="prose prose-zinc prose-lg mx-auto lg:mr-16 xl:mr-auto px-2 z-20 relative">
-    <section v-for="section in sections" :key="section.id" :id="section.id" class="pb-20">
+  <main
+    class="prose prose-zinc prose-lg mx-auto lg:mr-16 xl:mr-auto px-2 pt-16 pb-56 z-20 relative"
+  >
+    <h1>The Benefits of Vite</h1>
+
+    <section v-for="section in sections" :key="section.id" :id="section.id" class="pt-10">
+      <h2>{{ section.title }}</h2>
       <component :is="section.component"></component>
     </section>
   </main>

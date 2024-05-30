@@ -1,10 +1,6 @@
 ---
-id: optimized-build-process
 title: Optimized Build Process
-order: 2
 ---
-
-## Optimized Build Process
 
 When it comes to production builds, Vite shines with its optimized build
 process. It uses Rollup as its bundler, which is known for producing highly
