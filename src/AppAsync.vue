@@ -11,7 +11,7 @@ for (const path in files) {
     ...module.frontmatter
   })
 }
-sections = sections.sort((a, b) => a.id < b.id).sort((a, b) => a.order - b.order)
+sections = sections.sort((a, b) => a.id > b.id).sort((a, b) => a.order - b.order)
 
 const activeSection = ref('')
 const drawerOpen = ref(false)
